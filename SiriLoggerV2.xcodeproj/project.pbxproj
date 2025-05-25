@@ -6,20 +6,127 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A5624CF72DE34D4800369809 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5624CF62DE34D4800369809 /* Intents.framework */; };
+		A5624CFE2DE34D4800369809 /* SiriLoggerV2Intents.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A5624CF42DE34D4800369809 /* SiriLoggerV2Intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5624D1B2DE36E2900369809 /* SiriLoggerV2Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A5624D112DE36E2700369809 /* SiriLoggerV2Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5624CFC2DE34D4800369809 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5624CD92DE34C6500369809 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5624CF32DE34D4800369809;
+			remoteInfo = SiriLoggerV2Intents;
+		};
+		A5624D192DE36E2900369809 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5624CD92DE34C6500369809 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5624D102DE36E2700369809;
+			remoteInfo = "SiriLoggerV2Watch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5624D032DE34D4800369809 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A5624CFE2DE34D4800369809 /* SiriLoggerV2Intents.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5624D1F2DE36E2900369809 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A5624D1B2DE36E2900369809 /* SiriLoggerV2Watch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A5624CE12DE34C6500369809 /* SiriLoggerV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriLoggerV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5624CF42DE34D4800369809 /* SiriLoggerV2Intents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriLoggerV2Intents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5624CF62DE34D4800369809 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		A5624D112DE36E2700369809 /* SiriLoggerV2Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SiriLoggerV2Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A5624CFF2DE34D4800369809 /* Exceptions for "SiriLoggerV2Intents" folder in "SiriLoggerV2Intents" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A5624CF32DE34D4800369809 /* SiriLoggerV2Intents */;
+		};
+		A5624D082DE34E1000369809 /* Exceptions for "SiriLoggerV2" folder in "SiriLoggerV2Intents" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SiriLoggerIntents.intentdefinition,
+			);
+			target = A5624CF32DE34D4800369809 /* SiriLoggerV2Intents */;
+		};
+		A5624D0A2DE34E6400369809 /* Exceptions for "SiriLoggerV2" folder in "SiriLoggerV2" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A5624CE02DE34C6500369809 /* SiriLoggerV2 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A5624CE32DE34C6500369809 /* SiriLoggerV2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A5624D0A2DE34E6400369809 /* Exceptions for "SiriLoggerV2" folder in "SiriLoggerV2" target */,
+				A5624D082DE34E1000369809 /* Exceptions for "SiriLoggerV2" folder in "SiriLoggerV2Intents" target */,
+			);
 			path = SiriLoggerV2;
+			sourceTree = "<group>";
+		};
+		A5624CF82DE34D4800369809 /* SiriLoggerV2Intents */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A5624CFF2DE34D4800369809 /* Exceptions for "SiriLoggerV2Intents" folder in "SiriLoggerV2Intents" target */,
+			);
+			path = SiriLoggerV2Intents;
+			sourceTree = "<group>";
+		};
+		A5624D122DE36E2700369809 /* SiriLoggerV2Watch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "SiriLoggerV2Watch Watch App";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A5624CDE2DE34C6500369809 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5624CF12DE34D4800369809 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5624CF72DE34D4800369809 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5624D0E2DE36E2700369809 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				A5624CE32DE34C6500369809 /* SiriLoggerV2 */,
+				A5624CF82DE34D4800369809 /* SiriLoggerV2Intents */,
+				A5624D122DE36E2700369809 /* SiriLoggerV2Watch Watch App */,
+				A5624CF52DE34D4800369809 /* Frameworks */,
 				A5624CE22DE34C6500369809 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +151,18 @@
 			isa = PBXGroup;
 			children = (
 				A5624CE12DE34C6500369809 /* SiriLoggerV2.app */,
+				A5624CF42DE34D4800369809 /* SiriLoggerV2Intents.appex */,
+				A5624D112DE36E2700369809 /* SiriLoggerV2Watch Watch App.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A5624CF52DE34D4800369809 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5624CF62DE34D4800369809 /* Intents.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +175,14 @@
 				A5624CDD2DE34C6500369809 /* Sources */,
 				A5624CDE2DE34C6500369809 /* Frameworks */,
 				A5624CDF2DE34C6500369809 /* Resources */,
+				A5624D032DE34D4800369809 /* Embed Foundation Extensions */,
+				A5624D1F2DE36E2900369809 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A5624CFD2DE34D4800369809 /* PBXTargetDependency */,
+				A5624D1A2DE36E2900369809 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				A5624CE32DE34C6500369809 /* SiriLoggerV2 */,
@@ -68,6 +192,50 @@
 			);
 			productName = SiriLoggerV2;
 			productReference = A5624CE12DE34C6500369809 /* SiriLoggerV2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5624CF32DE34D4800369809 /* SiriLoggerV2Intents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5624D002DE34D4800369809 /* Build configuration list for PBXNativeTarget "SiriLoggerV2Intents" */;
+			buildPhases = (
+				A5624CF02DE34D4800369809 /* Sources */,
+				A5624CF12DE34D4800369809 /* Frameworks */,
+				A5624CF22DE34D4800369809 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A5624CF82DE34D4800369809 /* SiriLoggerV2Intents */,
+			);
+			name = SiriLoggerV2Intents;
+			packageProductDependencies = (
+			);
+			productName = SiriLoggerV2Intents;
+			productReference = A5624CF42DE34D4800369809 /* SiriLoggerV2Intents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A5624D102DE36E2700369809 /* SiriLoggerV2Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5624D1C2DE36E2900369809 /* Build configuration list for PBXNativeTarget "SiriLoggerV2Watch Watch App" */;
+			buildPhases = (
+				A5624D0D2DE36E2700369809 /* Sources */,
+				A5624D0E2DE36E2700369809 /* Frameworks */,
+				A5624D0F2DE36E2700369809 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A5624D122DE36E2700369809 /* SiriLoggerV2Watch Watch App */,
+			);
+			name = "SiriLoggerV2Watch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "SiriLoggerV2Watch Watch App";
+			productReference = A5624D112DE36E2700369809 /* SiriLoggerV2Watch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -81,6 +249,12 @@
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					A5624CE02DE34C6500369809 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					A5624CF32DE34D4800369809 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					A5624D102DE36E2700369809 = {
 						CreatedOnToolsVersion = 16.3;
 					};
 				};
@@ -100,12 +274,28 @@
 			projectRoot = "";
 			targets = (
 				A5624CE02DE34C6500369809 /* SiriLoggerV2 */,
+				A5624CF32DE34D4800369809 /* SiriLoggerV2Intents */,
+				A5624D102DE36E2700369809 /* SiriLoggerV2Watch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A5624CDF2DE34C6500369809 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5624CF22DE34D4800369809 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5624D0F2DE36E2700369809 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +312,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5624CF02DE34D4800369809 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5624D0D2DE36E2700369809 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5624CFD2DE34D4800369809 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5624CF32DE34D4800369809 /* SiriLoggerV2Intents */;
+			targetProxy = A5624CFC2DE34D4800369809 /* PBXContainerItemProxy */;
+		};
+		A5624D1A2DE36E2900369809 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5624D102DE36E2700369809 /* SiriLoggerV2Watch Watch App */;
+			targetProxy = A5624D192DE36E2900369809 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A5624CEA2DE34C6700369809 /* Debug */ = {
@@ -251,11 +468,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SiriLoggerV2/SiriLoggerV2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 64375J83D9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SiriLoggerV2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -279,11 +498,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SiriLoggerV2/SiriLoggerV2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 64375J83D9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SiriLoggerV2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +520,116 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5624D012DE34D4800369809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SiriLoggerV2Intents/SiriLoggerV2Intents.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64375J83D9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SiriLoggerV2Intents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SiriLoggerV2Intents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ACME.SiriLoggerV2.SiriLoggerV2Intents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5624D022DE34D4800369809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SiriLoggerV2Intents/SiriLoggerV2Intents.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64375J83D9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SiriLoggerV2Intents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SiriLoggerV2Intents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ACME.SiriLoggerV2.SiriLoggerV2Intents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5624D1D2DE36E2900369809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64375J83D9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SiriLoggerV2Watch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ACME.SiriLoggerV2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ACME.SiriLoggerV2.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		A5624D1E2DE36E2900369809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64375J83D9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SiriLoggerV2Watch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ACME.SiriLoggerV2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ACME.SiriLoggerV2.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
 			};
 			name = Release;
 		};
@@ -319,6 +650,24 @@
 			buildConfigurations = (
 				A5624CED2DE34C6700369809 /* Debug */,
 				A5624CEE2DE34C6700369809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5624D002DE34D4800369809 /* Build configuration list for PBXNativeTarget "SiriLoggerV2Intents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5624D012DE34D4800369809 /* Debug */,
+				A5624D022DE34D4800369809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5624D1C2DE36E2900369809 /* Build configuration list for PBXNativeTarget "SiriLoggerV2Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5624D1D2DE36E2900369809 /* Debug */,
+				A5624D1E2DE36E2900369809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
